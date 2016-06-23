@@ -1,0 +1,52 @@
+body {
+	text-align: center;
+    background: #000;
+    color: white;
+}
+
+p.credits {
+	display: none;
+}
+
+#controls {
+  margin-bottom: 10px;
+  color: black;
+}
+
+#board {
+    margin: 0 auto;
+    overflow: auto;
+    width: 624px;
+    position: relative;
+}
+
+#message {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    left: 50%;
+    top: 140px;
+}
+
+canvas {
+	border: 1px solid white;
+    float: left;
+}
+
+#gridContainer {
+    float: left;
+    width: 260px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: 20px;
+    color: #565656;
+}
+
+.gridOff {
+    color: #787878;
+}
+
+.gridOn {
+    color: red;
+}

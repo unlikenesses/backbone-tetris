@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Tetris</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1>Backbone Tetris</h1>
+	<p>Implementation of Tetris in backbone.js</p>
+	<div id="controls">
+        <button id="pause">Pause (p)</button>
+        <button id="mute">Mute (m)</button>
+		<button id="new_game">New Game (n)</button>
+	</div>
+	<div id="board">
+    	<canvas width="300" height="500"></canvas>
+        <div id="gridContainer"><div class="grid"></div></div>
+        <div id="message"></div>
+    </div>
+	<p class="credits">Built with backbone.js</p>
+	<script id="blockTemplate" type="text/template">
+	</script>
+	<script src="js/lib/jquery-1.11.3.min.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/backbone.js"></script>
+    <script src="js/lib/jsfxr.js"></script>
+    <script src="js/models/block.js"></script>
+    <script src="js/collections/board.js"></script>
+    <script src="js/views/block.js"></script>
+    <script src="js/views/board.js"></script>
+    <script src="js/views/grid.js"></script>
+    <script src="js/views/controls.js"></script>
+    <script src="js/app.js"></script>
+    <script>$(function(){app.boot()});</script>
+</body>
+</html>
