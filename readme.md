@@ -1,5 +1,7 @@
 ## Backbone.js Tetris
 
+[Demo here](https://unlikenesses.github.io/backbone-tetris/).
+
 An implementation in [Backbone.js](http://backbonejs.org/) of Tetris, sans scoring and levels. 
 
 ![Example](still.gif)
