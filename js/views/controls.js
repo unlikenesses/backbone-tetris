@@ -1,20 +1,18 @@
 var app = app || {};
 
 app.ControlsView = Backbone.View.extend({
+  el: $("#controls"),
 
-	el: $('#controls'),
+  events: {
+    "click #pause": "pause",
+    "click #mute": "mute"
+  },
 
-	events: {
-		'click #pause': 'pause',
-        'click #mute': 'mute',
-	},
+  pause: function() {
+    app.events.trigger("pause");
+  },
 
-	pause: function() {
-		app.events.trigger('pause');
-	},
-
-    mute: function() {
-        app.events.trigger('mute');
-    }
-
+  mute: function() {
+    app.events.trigger("mute");
+  }
 });
